@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة المستقبل | Future University</title>
+    <style>
+        /* تنسيقات عامة */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* الهيدر والقائمة */
+        header {
+            background: #0a192f;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 { margin: 0; font-size: 1.5rem; color: #64ffda; }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        /* القسم الرئيسي (Hero) */
+        .hero {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                        url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; }
+
+        .btn {
+            background: #64ffda;
+            color: #0a192f;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #fff; }
+
+        /* الأقسام */
+        section { padding: 50px 10%; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+
+        /* الكروت (البطاقات) */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { color: #0a192f; }
+
+        /* الفوتر */
+        footer {
+            background: #0a192f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>جامعة المستقبل</h1>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#about">عن الجامعة</a>
+            <a href="#majors">التخصصات</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>اصنع مستقبلك معنا</h2>
+        <p>نحن نوفر أحدث التقنيات التعليمية لإعداد جيل متمكن من أدوات العصر والذكاء الاصطناعي.</p>
+        <a href="#" class="btn">سجل الآن</a>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>لماذا جامعة المستقبل؟</h2>
+            <p>نحن ندمج بين الجانب الأكاديمي والخبرة العملية في بيئة ذكية.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>تعليم ذكي</h3>
+                <p>قاعات مجهزة بأحدث تقنيات الواقع الافتراضي والمعزز.</p>
+            </div>
+            <div class="card">
+                <h3>شراكات عالمية</h3>
+                <p>شهادات معتمدة بالتعاون مع كبرى الجامعات الدولية.</p>
+            </div>
+            <div class="card">
+                <h3>فرص وظيفية</h3>
+                <p>نربط طلابنا بسوق العمل مباشرة قبل التخرج.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="majors" style="background-color: #e9ecef;">
+        <div class="section-title">
+            <h2>أبرز التخصصات</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>الذكاء الاصطناعي</h3>
+                <p>تعلم بناء أنظمة ذكية تحاكي العقل البشري.</p>
+            </div>
+            <div class="card">
+                <h3>الأمن السيبراني</h3>
+                <p>حماية البيانات والأنظمة الرقمية من التهديدات.</p>
+            </div>
+            <div class="card">
+                <h3>الطاقة المستدامة</h3>
+                <p>ابتكار حلول لطاقة نظيفة وصديقة للبيئة.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 جامعة المستقبل - Future University</p>
+    </footer>
+
+</body>
+</html>
